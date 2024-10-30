@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tiến Dũng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Căn nội dung sát đầu trang */
+            height: 100vh;
+            margin: 0;
+            padding-top: 50px; /* Thêm khoảng cách phía trên */
+        }
+        .profile-card {
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            background: white;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .avatar {
+            width: 130px; /* Giảm kích thước để tránh bị che */
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 5px solid #86a8e7;
+            transition: border 0.3s ease;
+        }
+        .profile-card:hover .avatar {
+            border-color: #7f7fd5;
+        }
+        .name {
+            font-size: 30px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .description, .objective, .skills, .contact {
+            font-size: 15px;
+            font-weight: 300;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .description p, .objective p, .skills ul, .contact p {
+            margin: 5px 0;
+        }
+        .skills h3, .objective h3, .contact h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #86a8e7;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #7f7fd5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <img src="Tromcuop.jpg" alt="Avatar" class="avatar">
+    <div class="name">Nguyễn Tiến Dũng</div>
+    <div class="job-title">Mã SV: 223001704 - Lớp: CNTT D2023B</div>
+    <div class="description">
+        Tôi sinh ngày 28/02/2005 sinh ra và lớn lên ở Hải Phòng. Tôi hiện là sinh viên năm 2 ngành Công nghệ Thông tin, khoa Toán - Công nghệ thông tin
+        Trường Đại học Thủ đô Hà Nội với niềm đam mê khám phá và học hỏi về lập trình và công nghệ. Tôi 
+        luôn đặt mục tiêu phát triển kỹ năng của mình để chuẩn bị tốt nhất cho sự nghiệp trong tương lai.
+        Tôi có sở thích là chơi game và đá bóng. 
+    </div>
+    
+    <div class="skills">
+        <h3>Kỹ Năng</h3>
+        <ul>
+            <li>HTML, CSS cơ bản</li>
+            <li>Python, Java cơ bản</li>
+            <li>Kỹ năng giải quyết vấn đề</li>
+            <li>Kỹ năng làm việc nhóm</li>
+        </ul>
+    </div>
+    
+    <div class="contact">
+        <h3>Liên Hệ</h3>
+        <p>Email: <a href="mailto:https://mail.google.com/mail/u/0/#inbox">dung57330@gmail.com</a></p>
+        <p>Điện thoại: (+84) 339 925 885</p>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100021576586317&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/dungx2825/profilecard/?igsh=MXVwcWp3MXh5Z29pcQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@tiendung28225?_t=8qymW0voDac&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+</div>
+
+</body>
+</html>
